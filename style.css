@@ -37,6 +37,7 @@ body {
 #keypad {
 	flex: 8;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 8px;
 }
 
@@ -45,6 +46,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
+}
+
+.digits .clear {
+	flex-basis: 100%;
+	font-size: 20px;
 }
 
 .digit {
@@ -66,5 +72,5 @@ body {
 .operator,
 .result,
 .operand {
-	font-size: 18px;
+	font-size: 20px;
 }
