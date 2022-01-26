@@ -12,23 +12,30 @@ body {
 
 #calculator {
 	display: inline-flex;
-	height: 60%;
-	width: 35%;
+	width: 25%;
+	aspect-ratio: 0.65;
 	flex-direction: column;
 	border: 1px solid black;
 	padding: 8px;
-	margin: 100px auto;
+	margin: auto;
 }
 
 #screen {
-	flex: 2 1 auto;
+	display: flex;
+	flex-flow: column wrap;
+	flex: 2;
+	justify-content: space-around;
+	align-items: flex-end;
 	width: 100%;
-	background-color: #ddd;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 5px;
 	margin: 0px auto 8px;
 }
 
 #keypad {
-	flex: 5 1 auto;
+	flex: 8;
 	display: flex;
 	gap: 8px;
 }
@@ -53,4 +60,11 @@ body {
 
 .operators button {
 	flex: 1 1 20%;
+}
+
+.digit,
+.operator,
+.result,
+.operand {
+	font-size: 18px;
 }
