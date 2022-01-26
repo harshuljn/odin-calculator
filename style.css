@@ -1,0 +1,56 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#calculator {
+	display: inline-flex;
+	height: 60%;
+	width: 35%;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 8px;
+	margin: 100px auto;
+}
+
+#screen {
+	flex: 2 1 auto;
+	width: 100%;
+	background-color: #ddd;
+	margin: 0px auto 8px;
+}
+
+#keypad {
+	flex: 5 1 auto;
+	display: flex;
+	gap: 8px;
+}
+
+.digits {
+	flex: 4;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.digit {
+	flex: 1 1 25%;
+}
+
+.operators {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.operators button {
+	flex: 1 1 20%;
+}
